@@ -1,0 +1,182 @@
+/* @font-face {
+  font-family: 'Outward';
+  src: url('.\outward-block-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Outward";
+  src: url('.\outward-borders-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Outward';
+  src: url('.\outward-round-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+} */
+
+
+body {
+  /* 1 */
+  /* background: #0f0c29;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* 2 */
+  /* background: #360033;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #0b8793, #360033);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #0b8793, #360033); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  width: 100vw;
+  background: #314755;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26a0da, #314755);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #26a0da, #314755);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 50px;
+}
+
+.mainHeading {
+  display: block;
+  margin: auto;
+  width: auto;
+  text-align: center;
+  padding-bottom: 0.5%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.subHeading {
+  display: block;
+  margin: auto;
+  width: auto;
+  text-align: center;
+  padding-bottom: 0.5%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: large;
+}
+
+.container {
+  max-width: 85%;
+
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  margin: auto;
+  height: 60vh;
+  padding: 33px;
+
+  overflow-y: auto;
+  margin-bottom: 23px;
+  border-radius: 20px;
+}
+
+.message {
+  background: #355C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 75%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+#send-message {
+  display: block;
+  margin: auto;
+  text-align: centre;
+  max-width: 985px;
+  width: 100%;
+}
+
+#messageInp {
+  width: 90%;
+  background: #D3CCE3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  color: #19aae6;
+  color: black;
+  background: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 17px;
+  height: 35px;
+  width: 75px;
+  padding: auto;
+  margin: auto;
+  border: 2px solid #0a384c;
+  border-radius: 8px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  background: #19aae6;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: -1;
+}
+button:hover{
+  color:#ffffff;
+}
+
+button:before{
+  top: 100%;
+  left: 100%;
+  transition: 0.7s;
+}
+
+button:hover:before{
+top: -30px;
+left: -30px;
+}
+button:active:befor{
+  background: #3a0ca3;
+  transition: 0s;
+}
